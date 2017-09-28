@@ -1,1 +1,1 @@
-sudo apt install vim feh rxvt-unicode-256color chromium rofi ranger htop tmux neofetch git xorg network-manager network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome openvpn w3m fonts-noto-cjk vim-pathogen zsh i3lock
+sudo apt install vim feh rxvt-unicode-256color chromium rofi ranger htop tmux neofetch git xorg network-manager network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome openvpn w3m fonts-noto-cjk vim-pathogen zsh i3lock vrms
