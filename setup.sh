@@ -11,6 +11,15 @@ git clone https://github.com/Airblader/i3 gaps
 git clone --branch 3.0.5 --recursive https://github.com/jaagr/polybar
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+cd $HOME/gaps
+autoreconf --force --install
+mkdir -p build
+cd build; ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+make; sudo make install
+
+cd $HOME/polybar
+./build.sh
+
 ln -sf $HOME/dotfiles/i3/config $HOME/.config/i3/config
 ln -sf $HOME/dotfiles/.xinitrc $HOME/.xinitrc
 ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
