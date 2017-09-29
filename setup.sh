@@ -12,7 +12,7 @@ cd build; ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
 make; sudo make install
 
 cd $HOME/polybar
-./build.sh
+echo "y y y y y y" | ./build.sh
 
 mkdir -p $HOME/.config/i3
 
