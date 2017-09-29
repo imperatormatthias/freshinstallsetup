@@ -12,7 +12,8 @@ cd build; ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
 make; sudo make install
 
 cd $HOME/polybar
-echo "y y y y y y" | ./build.sh
+echo "Y" | ./build.sh
+cd build; make userconfig
 
 mkdir -p $HOME/.config/i3
 
@@ -22,5 +23,7 @@ ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
 ln -sf $HOME/dotfiles/.Xresources $HOME/.Xresources
 
 xdg-user-dirs-update
+
+cd $HOME
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
