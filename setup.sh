@@ -24,7 +24,7 @@ ln -sf $HOME/dotfiles/.Xresources $HOME/.Xresources
 
 xdg-user-dirs-update
 
-mkdir -p .vim/colors
+mkdir -p .vimrc/colors
 cd .vim/colors
 wget https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
