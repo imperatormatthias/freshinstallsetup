@@ -24,6 +24,10 @@ ln -sf $HOME/dotfiles/.Xresources $HOME/.Xresources
 
 xdg-user-dirs-update
 
+mkdir -p .vim/colors
+cd .vim/colors
+wget https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+
 cd $HOME
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
