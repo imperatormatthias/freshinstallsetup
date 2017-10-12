@@ -13,7 +13,7 @@ make; sudo make install
 
 cd $HOME/polybar
 echo "Y" | ./build.sh
-cd build; make userconfig
+cd build; sudo make install; make userconfig
 
 mkdir -p $HOME/.config/i3
 
